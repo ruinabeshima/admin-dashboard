@@ -19,6 +19,7 @@ body {
   padding: 2rem; 
   border: 1px solid pink; 
   background-color: pink;
+  box-shadow: 0 4px 10px -6px rgb(0, 0, 0);
 }
 
 .sidebar-icon {
@@ -31,7 +32,13 @@ body {
   grid-column: 2/6; 
   display: grid; 
   grid-template-rows: 1fr 1fr; 
-  border-bottom: 0.5rem solid pink;
+  border-bottom: 1px solid black;
+  background-color: rgb(248, 234, 234); 
+  box-shadow: 0 4px 10px -6px rgb(0, 0, 0);
+}
+
+.header-profile-greeting {
+  font-weight: bold; 
 }
 
 .main-content {
@@ -85,7 +92,8 @@ h1 {
   height: 2rem; 
   width: 90%; 
   margin-left: 1rem; 
-  border-radius: 10px;  
+  border-radius: 10px; 
+  padding-left: 1rem;  
 }
 
 .profile-name {
@@ -107,10 +115,12 @@ h1 {
 .header-profile {
   display: grid; 
   grid-template-columns: repeat(15, 1fr);
+  border-top: 1px solid black;
 }
 
 .profile-pic-header {
-  grid-column: 1/3; 
+  grid-column: 2/3; 
+  padding-right: 0.5rem; 
 }
 
 #profile-pic-header {
@@ -166,11 +176,13 @@ h1 {
 }
 
 .kanban-title {
-  height: 5%;   
+  height: 5%; 
+  font-style: italic;   
 }
 
 .kanban-title-small {
   height: 10%; 
+  font-style: italic; 
 }
 
 .my-projects-grid-container {
@@ -180,6 +192,21 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;  
+}
+
+.my-projects-grid-container > div, .announcements-grid-container > div, .trending-grid-container > div {
+  box-shadow: 0 4px 10px -6px rgb(0, 0, 0);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.my-projects-grid-container > div > p{
+  font-weight: bold; 
+}
+
+.announcements-grid-container > div > p, .trending-grid-container > div > p {
+  text-align: center; 
 }
 
 .announcements-grid-container {
@@ -196,3 +223,11 @@ h1 {
   grid-template-rows: repeat(4, 1fr); 
 }
 
+.flex-container > button {
+  background-color: white; 
+}
+
+.flex-container > button:hover {
+  background-color: rgb(216, 214, 214); 
+  cursor: pointer; 
+}
