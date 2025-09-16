@@ -13,16 +13,43 @@
     <h1>Dashboard</h1>
 
     <div class="grid-container">
-      <div>Home</div>
-      <div>Profile</div>
-      <div>Messages</div>
-      <div>History</div>
-      <div>Tasks</div>
+      <div>
+        <img src="resources/home.svg" alt="Home Icon" class="sidebar-icon">
+        <p>Home</p>
+      </div>
+      <div>
+        <img src="resources/profile.svg" alt="Profile Icon" class="sidebar-icon">
+        <p>Profile</p>
+      </div>
+      <div>
+        <img src="resources/messages.svg" alt="Messages Icon" class="sidebar-icon">
+        <p>Messages</p>
+      </div>
+      <div>
+        <img src="resources/history.svg" alt="History Icon" class="sidebar-icon">
+        <p>History</p>
+      </div>
+      <div>
+        <img src="resources/task.svg" alt="Task Icon" class="sidebar-icon">
+        <p>Tasks</p>
+      </div>
+      <div>
+        <img src="resources/community.svg" alt="Community Icon" class="sidebar-icon">
+        <p>Community</p>
+      </div>
       <div></div>
-      <div>Communities</div>
-      <div>Settings</div>
-      <div>Support</div>
-      <div>Privacy </div>
+      <div>
+        <img src="resources/setting.svg" alt="Setting Icon" class="sidebar-icon">
+        <p>Settings</p>
+      </div>
+      <div>
+        <img src="resources/support.svg" alt="Support Icon" class="sidebar-icon">
+        <p>Support</p>
+      </div>
+      <div>
+        <img src="resources/privacy.svg" alt="Privacy Icon" class="sidebar-icon">
+        <p>Privacy</p>
+      </div>
     </div>
     
   </section>
@@ -30,13 +57,82 @@
 
   <section class="header">
     <section class="header-navbar">
-      Navbar
+      <div class="flex-container search-icon">
+        <img src="resources/search.svg" alt="Search Icon" id="search-icon">
+      </div>
+      <div class="search-container search-bar">
+        <input type="search" placeholder="Search..." id="search-bar">
+      </div>
+      <div class="flex-container notif-icon">
+        <img src="resources/notif.svg" alt="Notif Icon" id="notif-icon">
+      </div>
+      <div class="flex-container profile-pic-navbar">
+        <img src="resources/profilepic.jpeg" alt="Profile Picture" id="profile-pic-navbar">
+      </div>
+      <div class="flex-container profile-name">
+        <p id="profile-name">Rui Nabeshima</p>
+      </div>
     </section>
+
     <section class="header-profile">
-      Profile
+      <div class="flex-container profile-pic-header">
+        <img src="resources/profilepic.jpeg" alt="Profile Picture" id="profile-pic-header">
+      </div>
+      <div class="text-container">
+        <p>Hi there,</p>
+        <p>Rui Nabeshima (@ruinabeshima)</p>
+      </div>
+      <div class="flex-container button-new">
+        <button id="button-new">New</button>     
+      </div>
+      <div class="flex-container button-upload">
+        <button id="button-upload">Upload</button>
+      </div>
+      <div class="flex-container button-share">
+        <button id="button-share">Share</button>
+      </div>
     </section>
   </section>
-  <section class="main-content">Main Content</section>
+
+
+  <section class="main-content">
+    <div class="grid-container-main">
+      
+      <div class="my-projects">
+        <p class="kanban-title">My Projects</p>
+        <div class="my-projects-grid-container">
+          <div>Super Cool Project</div>
+          <div>Less Cool Project </div>
+          <div>Impossible App </div>
+          <div>Easy Peasy App</div>
+          <div>Ad Blocker </div>
+          <div>Money Maker</div>
+        </div>
+        
+      </div>
+
+      <div class="announcements">
+        <p class="kanban-title-small">Announcements</p>
+        <div class="announcements-grid-container">
+          <div>Site Maintenance</div>
+          <div>Community Share Day </div>
+          <div>Updated Privacy Policy</div>
+        </div>
+        
+      </div>
+      <div class="trending">
+        <p class="kanban-title-small">Trending</p>
+        <div 
+        class="trending-grid-container">
+          <div>@tegan: World Peace Builder</div>
+          <div>@morgan: Super Cool Project</div>
+          <div>@kendall: Life Changing App</div>
+          <div>@alex: No Traffic Maker</div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
   
 </body>
 </html>
